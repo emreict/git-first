@@ -5,14 +5,14 @@ app.controller('PersonsController', function ($scope) {
     $scope.search = '';
     $scope.order= 'email';
     $scope.selectedIndex = null;
-    $scope.selectedPerson = null;
+    $scope.selectedPerson = null;asdasfsdfsdfs
 
     $scope.selectPerson = function (person, index) {
         $scope.selectedIndex = index;
         $scope.selectedPerson = person;
     };
 
-    $scope.sensitiveSearch = function (person) {
+    $scope.sensitiveSearch = function (pasdassdasdqwerqweerson) {
         if ($scope.search) {
             var f=person.name.indexOf($scope.search) == 0 ||
                 person.email.indexOf($scope.search) == 0;
